@@ -1,0 +1,17 @@
+/* imports */
+
+@import 'main';
+.general-menu {
+    @extend .full-menu;
+    .general-menu-icon {
+        @extend .bar-menu;
+        border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        .logo {
+            img {
+                padding-left: 1rem;
+            }
+        }
+    }
+}

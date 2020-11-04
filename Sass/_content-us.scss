@@ -1,0 +1,159 @@
+/* imports */
+
+@import 'main';
+
+/* who we are */
+
+.primary-us {
+    @extend .primary;
+    grid-template-rows: 53rem 20rem 65rem 35rem;
+    width: 100%;
+    /* article Who we are */
+    .image-who-we-are {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: flex;
+        .img-who {
+            margin: 5rem 0rem;
+            padding: 2rem;
+            img {
+                width: 40rem;
+            }
+        }
+        .divider-who {
+            margin-top: 15.3rem;
+            height: 5px;
+            width: 22rem;
+            background: linear-gradient(90deg, #ad0062 0%, #ec0b43 100%);
+        }
+        .text-who-we-are {
+            margin-top: 13rem;
+            padding: 0rem 2rem 0rem 1.5rem;
+        }
+    }
+    /* our history */
+    .our-history {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        display: grid;
+        .left-section-history {
+            grid-column-start: 1;
+            h2 {
+                padding-left: 2rem;
+            }
+        }
+        .center-section-history {
+            grid-column-start: 2;
+            p {
+                padding: 0rem 3rem 0rem 5rem;
+                border-right: solid 2px;
+                border-color: #E32061;
+            }
+        }
+        .right-tags-history {
+            grid-column-start: 3;
+            ul {
+                list-style: none;
+                padding: 0rem 4rem 0rem 3rem;
+                text-align: center;
+            }
+        }
+    }
+    /* what we do */
+    .what-we-do {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: grid;
+        grid-template-rows: 1rem 8rem 6rem;
+        .sub-title-what-we-do {
+            h2 {
+                padding: 0rem 2rem;
+            }
+        }
+        .title-what-we-do {
+            p {
+                font-size: 3.3rem;
+                font-weight: bolder;
+                padding: 0rem 5rem 0rem 2rem;
+                text-transform: uppercase;
+            }
+        }
+        .divider-what {
+            height: 5px;
+            width: 7rem;
+            background: linear-gradient(90deg, #ad0062 0%, #ec0b43 100%);
+            transform: translate(25rem, -6.7rem);
+        }
+        .img-what-we-do {
+            padding: 0rem 0rem 0rem 2rem;
+            img {
+                width: 86rem;
+            }
+        }
+    }
+    /* team */
+    .team {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: grid;
+        grid-template-columns: 9rem 45rem 29rem 6rem;
+        grid-template-rows: 10rem 12rem 9rem 9rem;
+        .divider-team {
+            height: 5px;
+            width: 5rem;
+            background: linear-gradient(90deg, #ad0062 0%, #ec0b43 100%);
+            transform: translate(2rem, 7.3rem);
+        }
+        .divider-team {
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+        .team-title {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            margin-top: 5rem;
+        }
+        .sub-title {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            h2 {
+                padding-left: 2rem;
+            }
+        }
+        .text {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            margin-top: 3rem;
+            p {
+                padding: 0rem 13rem 0rem 2rem;
+            }
+        }
+        .list {
+            display: flex;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            padding-left: 0.6rem;
+            .list-2 {
+                padding-left: 3rem;
+            }
+        }
+        .image-team {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            img {
+                width: 34rem;
+            }
+        }
+    }
+}

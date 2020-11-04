@@ -1,0 +1,146 @@
+/* imports */
+
+@import 'main';
+
+/* primary */
+
+.primary-connect {
+    @extend .primary;
+    grid-template-rows: auto;
+}
+
+
+/*  article about contact */
+
+.about-connect {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 7rem 4rem 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    .img {
+        img {
+            width: 40rem;
+        }
+    }
+    .divider-connect {
+        @extend .dividers;
+        margin: 2.6rem 0rem 0rem 2rem;
+        width: 6rem;
+        height: 0.3rem;
+    }
+    .text {
+        padding-left: 2rem;
+        width: 30rem;
+        .signature {
+            margin: 4rem;
+            width: 20rem;
+            img {
+                width: 20rem;
+            }
+        }
+    }
+}
+
+
+/* Article midtext */
+
+.connect-midtext {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    margin: 7rem auto;
+    padding-left: 0rem;
+    h2 {
+        margin-right: 2rem;
+    }
+    p {
+        width: 60rem;
+        border-left: 2px solid;
+        border-color: #E32061;
+        padding: 0rem 2rem;
+    }
+}
+
+
+/* article connect */
+
+.connect {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-wrap: wrap;
+    .text {
+        padding-left: 6rem;
+        .divider-connect {
+            @extend .dividers;
+            width: 17rem;
+            height: 0.3rem;
+        }
+        p {
+            padding-right: 8rem;
+            width: 38rem;
+        }
+    }
+    form {
+        margin: 1rem auto;
+        label {
+            margin-top: 2.5rem;
+            display: block;
+            width: 25rem;
+            font-size: 0.87rem;
+        }
+        input {
+            margin-top: 0.5rem;
+            display: block;
+            width: 25rem;
+            background: none;
+        }
+        input,
+        select,
+        textarea {
+            border: none;
+            border-bottom: solid 1.7px;
+            border-color: $colorTextLoader;
+            font-size: 1rem;
+        }
+        select {
+            margin-top: 2.5rem;
+            display: block;
+            width: 26rem;
+            background: none;
+        }
+        textarea {
+            width: 409px;
+            height: 59px;
+            background: none;
+            margin-top: 1rem;
+            color: $colorTipografiaPrincipal;
+        }
+        button {
+            margin-top: 3.5rem;
+            display: block;
+            width: 25.8rem;
+            padding: 0.5rem;
+            background: none;
+            color: $colorTipografiaPrincipal;
+            border: none;
+            border-bottom: solid 1.7px;
+            border-color: $colorTextLoader;
+        }
+        button:hover {
+            background-color: #E32061;
+            color: #fff;
+            transition: 0.5s;
+            text-align: center;
+            border-color: transparent
+        }
+        button,
+        input,
+        select,
+        textarea:focus {
+            outline: none;
+            color: $colorTipografiaPrincipal;
+        }
+    }
+}

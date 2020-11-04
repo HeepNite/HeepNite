@@ -1,0 +1,27 @@
+/* import */
+@import 'main';
+
+.footer{
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    .icon-social{
+        color:$colorTipografiaPrincipal ;
+        text-align: center;
+      i{
+          font-size: 1.2rem;
+        margin: 0 0 0 25px;
+        color: #FAF8FA;
+        text-align: center;
+        transform: translate(-0.5rem);
+      }
+    }
+    .copy{
+        color: #ffffff82;
+        font-family:'Poppins';
+        font-style: italic;
+        font-weight: 100;
+        text-align: center;
+    }
+}
+

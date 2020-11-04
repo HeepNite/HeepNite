@@ -1,0 +1,185 @@
+/* variables of color */
+
+$colorBackLoaderOne:#000807;
+$colorBackLoaderTwo:#05051A;
+$colorTextLoader: #A70F4F;
+$colorFondoUno: #000000;
+$colorFondoDos:#000011;
+$colorTipografiaPrincipal: #FAF8FA;
+$colorTipografiaSecundaria: #09111C;
+$colorTipografiaTerciaria:#01021F;
+$colorLoadBar: rgba(66, 66, 66, 0.747);
+$colorBackground: #121212;
+
+/* generics styles */
+
+.full-menu {
+    width: 100%;
+    height: auto;
+    color: $colorTipografiaPrincipal;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.3rem;
+    /* full cream menu */
+    nav {
+        width: 100vw;
+        z-index: 90;
+        position: relative;
+        .block-reveal {
+            background: black;
+            height: 100vh;
+            position: absolute;
+        }
+        #block-01 {
+            left: 0%;
+        }
+        #block-02 {
+            left: 25%;
+        }
+        #block-03 {
+            left: 50%;
+        }
+        #block-04 {
+            left: 75%;
+        }
+        .menu-items {
+            display: none;
+            position: absolute;
+            width: 50%;
+            left: 25%;
+            height: 100vh;
+            text-align: center;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                flex-direction: column;
+                li {
+                    padding: 1rem;
+                    a {
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bar-menu {
+    display: grid;
+    grid-template-columns: 1fr 20rem 7rem;
+    .logo {
+        padding-left: 0.5rem;
+        justify-self: start;
+        align-self: end;
+        img {
+            width: 12rem;
+        }
+    }
+    .middle {
+        justify-self: end;
+        align-self: end;
+        padding: 0rem 0.7rem 1.3rem 0rem;
+        i {
+            width: 30px;
+            font-size: 1.2rem;
+        }
+    }
+    .right {
+        justify-self: end;
+        align-self: center;
+        .menu {
+            position: relative;
+            z-index: 100;
+            display: flex;
+            background-color: transparent;
+            color: $colorTipografiaPrincipal;
+            border: none;
+            width: auto;
+            padding-top: 0.7rem;
+            padding-right: 2.2rem;
+            outline: none;
+            cursor: pointer;
+            letter-spacing: 0.2rem;
+            .text-btn {
+                opacity: 0;
+                transition: all .4s ease-in-out;
+                transform: translateY(-20px);
+            }
+            .btn-icon {
+                display: block;
+                padding: 0rem 0.3rem 0rem 0.15rem;
+                opacity: 1;
+                transform: translateY(0px);
+                span {
+                    display: block;
+                    background-color: $colorTipografiaPrincipal;
+                    margin-bottom: 4px;
+                    width: 18px;
+                    height: 2px;
+                }
+                span:first-child {
+                    margin-top: 0.56rem;
+                }
+                span:last-child {
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+        .menu:hover .text-btn {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        .menu:hover .text-btn:first-child {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        .menu .text-btn:first-child {
+            transform: translateY(20px);
+        }
+        .menu:hover .text-btn:last-child {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        .menu .text-btn:last-child {
+            transform: translateY(20px);
+        }
+    }
+}
+
+.primary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dividers {
+    background: linear-gradient(90deg, #ad0062 0%, #ec0b43 100%);
+}
+
+.cases-projects-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.cases-projects-date {
+    width: 16.2rem;
+    color: $colorTextLoader;
+    margin-top: 0;
+}
+
+.img-cases {
+    img {
+        width: 26rem;
+    }
+}

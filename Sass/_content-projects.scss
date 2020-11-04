@@ -1,0 +1,241 @@
+/* imports */
+
+@import 'main';
+
+/* primary projects */
+
+.primary-projects {
+    @extend .primary;
+    position: relative;
+    /* Article case 1  */
+    .case-1 {
+        grid-column-start: 2;
+        margin-top: 4rem;
+        .img {
+            img {
+                width: 27rem;
+            }
+        }
+        .text {
+            h1 {
+                @extend .cases-projects-title;
+            }
+            h3 {
+                @extend.cases-projects-date;
+                text-align: right;
+            }
+        }
+    }
+    /* Article case 2 */
+    .case-2 {
+        @extend .case-1;
+        grid-column-start: 3;
+        grid-row-start: 2;
+        margin-top: -21rem;
+        margin-left: 1rem;
+        .text {
+            margin-bottom: 2rem;
+            width: 26rem;
+            h2 {
+                @extend .cases-projects-title;
+                text-align: right;
+            }
+            h3 {
+                @extend .cases-projects-date;
+                text-align: right;
+                margin-left: 9.7rem;
+            }
+        }
+        .img {
+            @extend .img-cases;
+        }
+    }
+    /* Article case 3 */
+    .case-3 {
+        @extend .case-1;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        margin-top: 0;
+        .text {
+            margin-left: 2rem;
+            margin-bottom: 2rem;
+            h2 {
+                @extend .cases-projects-title;
+                text-align: left;
+                margin-top: 0;
+            }
+            h3 {
+                @extend .cases-projects-date;
+                text-align: left;
+            }
+        }
+        .img {
+            padding-left: 2rem;
+            img {
+                width: 27rem;
+            }
+        }
+    }
+    /* Article case 4 */
+    .case-4 {
+        @extend .case-1;
+        grid-column-start: 2;
+        grid-row-start: 4;
+        margin-top: -9rem;
+        margin-left: 2rem;
+        .img {
+            img {
+                width: 25rem;
+            }
+        }
+        .text {
+            h2 {
+                @extend .cases-projects-title;
+                text-align: left;
+            }
+            h3 {
+                @extend .cases-projects-date;
+                text-align: right;
+            }
+        }
+    }
+    /* Article case 5 */
+    .case-5 {
+        @extend .case-1;
+        grid-column-start: 3;
+        grid-row-start: 5;
+        margin-top: -4rem;
+        .text {
+            margin-bottom: 2rem;
+            width: 28rem;
+            h2 {
+                @extend .cases-projects-title;
+                text-align: right;
+                margin-top: 0;
+            }
+            h3 {
+                @extend .cases-projects-date;
+                text-align: right;
+                margin-left: 11.7rem;
+            }
+        }
+        .img {
+            @extend .img-cases;
+            margin-left: 2rem;
+        }
+    }
+    /* Article case 6 */
+    .case-6 {
+        @extend .case-1;
+        grid-column-start: 2;
+        grid-row-start: 6;
+        margin-top: 7rem;
+        margin-left: 2rem;
+        .text {
+            h2 {
+                @extend .cases-projects-title;
+                text-align: left;
+            }
+            h3 {
+                @extend .cases-projects-date;
+                text-align: right;
+            }
+        }
+    }
+    /* Article case 7 */
+    .case-7 {
+        @extend .case-1;
+        grid-column-start: 1;
+        grid-row-start: 7;
+        margin-top: -25rem;
+        margin-left: 2rem;
+        .text {
+            h2 {
+                @extend .cases-projects-title;
+                text-align: left;
+            }
+            h3 {
+                @extend .cases-projects-date;
+                text-align: left;
+            }
+        }
+    }
+    /* Article case 8 */
+    .case-8 {
+        @extend .case-1;
+        grid-column-start: 2;
+        grid-row-start: 8;
+        margin-top: 0;
+        .text {
+            margin-bottom: 2rem;
+            margin-right: 2rem;
+            h2 {
+                @extend .cases-projects-title;
+                text-align: right;
+                margin-top: 0;
+            }
+            h3 {
+                @extend .cases-projects-date;
+                text-align: right;
+                margin-left: 11.7rem;
+            }
+        }
+        .img {
+            @extend .img-cases;
+            margin-left: 2rem;
+        }
+    }
+    /* Article case 9 */
+    .case-9 {
+        @extend .case-1;
+        grid-column-start: 2;
+        grid-row-start: 10;
+        margin-top: -56rem;
+        .text {
+            margin-left: 2rem;
+            margin-bottom: 2rem;
+            h2 {
+                @extend .cases-projects-title;
+                text-align: left;
+                margin-top: 0;
+            }
+            h3 {
+                @extend .cases-projects-date;
+                text-align: left;
+            }
+        }
+        .img {
+            padding-left: 2rem;
+            img {
+                width: 27rem;
+            }
+        }
+    }
+    /* Article case 10 */
+    .case-10 {
+        @extend .case-1;
+        grid-column-start: 3;
+        grid-row-start: 9;
+        margin-top: 18rem;
+        margin-left: 2rem;
+        .img {
+            img {
+                width: 26rem;
+            }
+        }
+        .text {
+            margin-bottom: 2rem;
+            width: 26rem;
+            h2 {
+                @extend .cases-projects-title;
+                text-align: right;
+                margin-top: 0;
+            }
+            h3 {
+                @extend .cases-projects-date;
+                text-align: right;
+                margin-left: 9.7rem;
+            }
+        }
+    }
+}

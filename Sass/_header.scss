@@ -1,0 +1,12 @@
+   /* imports */
+   
+   @import 'main';
+   /* section menu */
+   
+   .index-menu {
+       @extend .full-menu;
+       .index-menu {
+           @extend .bar-menu;
+           padding: 2rem 0rem;
+       }
+   }
