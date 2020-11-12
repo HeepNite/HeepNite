@@ -12,4 +12,4 @@ The complete design was made
 working with vanilla **JavaScript**, **Scss** Preprocessor and **HTML.**
 Looking for a minimal and elegant design.
 
- For animations, were implement **animeJS** and** GSAP** JavaScript libraries.
+ For animations, were implement **animeJS** and **GSAP** JavaScript libraries.
