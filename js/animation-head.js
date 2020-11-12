@@ -31,7 +31,6 @@ function chargeSite(e) {
             top: '-100%',
             ease: Expo.easeInOut
         });
-
     }
 }
 
@@ -57,8 +56,8 @@ anime
         delay: (el, i) => 700 + 50 * i
     });
 
-/* menu Animation */
-function menuAnim(e) {
+/*  full screan menu Animation  */
+function menuAnim() {
     if (blockAnimation.reversed()) {
         blockAnimation.play();
         menuItems.setAttribute('style', 'display:block');
@@ -71,8 +70,6 @@ function menuAnim(e) {
             mainContent.setAttribute('style', 'display: block');
         }, 600);
     }
-
-    hiddenMenu()
 }
 /* call a new instance tween */
 let blockAnimation = new TimelineMax({
